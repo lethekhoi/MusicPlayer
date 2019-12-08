@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="quote"><![CDATA["Icon made by " +
+                "<a href ="\&quot;http://www.flaticon.com/authors/alessio-atzeni\&quot;">Alessio Atzeni</a>"+
+                "from"+"<a href="\&quot;http://www.flaticon.com\&quot;">www.flaticon.com</a>")]]></string>
+    <string name="lyric">Show lyric</string>
+</resources>

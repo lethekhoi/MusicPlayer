@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/play" />
+
+    <ImageButton
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnPlay"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_toEndOf="@+id/btnPlay"
+        android:layout_toRightOf="@+id/btnPlay"
+        android:background="@drawable/stop" />
+
+    <Button
+        android:textColor="#ffff"
+        android:background="@drawable/button"
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="46dp"
+        android:text="@string/lyric"
+        android:textAllCaps="false" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSongTime"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="It Will Rain"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:text="Artist: Bruno Mars" />
+
+    <TextView
+        android:id="@+id/textViewSongTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:gravity="center"
+        android:text="0.00/0.00" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="364dp"
+        android:layout_above="@id/textViewIconCopyright"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/lyric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you ever leave me, baby,\n
+Leave some morphine at my door\n
+'Cause it would take a whole lot of medication\n
+To realize what we used to have,\n
+We don't have it anymore.\n
+There's no religion that could save me\n
+No matter how long my leaves are on the floor\n
+So keep in mind all the sacrifices I'm makin'\n
+Will keep you by my side\n
+Will keep you from walkin' out the door.\n
+Cause there'll be no more sunlight\n
+if I lose you, baby\n
+There'll be no clear skies\n
+if I lose you, baby\n
+Just let the clouds, I\n
+I will do the same if you walk away\n
+Everyday, it will rain\n
+I'll never be your mother's favorite\n
+Your daddy can't even look me in the eye\n
+Oooh if I was in their shoes, I'd be doing the same thing\n
+Sayin there goes my little girl\n
+walkin' with that troublesome guy\n
+ But they're just afraid of something they can't understand\n
+Oooh well little darlin' watch me change their minds\n
+Yea for you I'll try I'll try I'll try\n
+I'll pick up these broken pieces 'til I'm bleeding\n
+That'll make you mine\n
+Cause there'll be no more sunlight\n
+if I lose you, baby\n
+There'll be no clear skies\n
+if I lose you, baby\n
+Just like the clouds, I\n
+I will do the same if you walk away\n
+Everyday, it will rain\n
+I'll do the same\n
+goodbye, don't just say, goodbye\n
+I'll pick up these broken pieces 'til I'm bleeding\n
+That'll make it right\n
+Cause there'll be no more sunlight\n
+if I lose you, baby\n
+There'll be no clear skies\n
+if I lose you, baby\n
+Just like the clouds, I\n
+I will do the same if you walk away\n
+Everyday, it will rain\n" />
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/textViewIconCopyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Icon made by Alessio Atzeni from www.flaticon.com"
+        android:textSize="12sp" />
+</RelativeLayout>
