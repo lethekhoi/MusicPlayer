@@ -52,6 +52,19 @@
         android:layout_alignParentRight="true" />
 
     <TextView
+        android:gravity="center"
+        android:id="@+id/textThongtin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:text="Lê Thế Khôi 1620112 - Dư Quốc Thành 1620235" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,12 +101,13 @@
         android:gravity="center"
         android:text="0.00/0.00" />
 
+
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="364dp"
         android:layout_above="@id/textViewIconCopyright"
-        android:layout_below="@+id/seekBar"
+        android:layout_below="@+id/textThongtin"
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
